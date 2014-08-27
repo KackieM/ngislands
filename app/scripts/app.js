@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'google-maps'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -26,6 +27,18 @@ angular
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
+      })
+      .when('/scbarrierislands', {
+        templateUrl: 'views/scbarrierislands.html',
+        controller: 'MainCtrl'
+      })
+      .when('/history', {
+        templateUrl: 'views/history.html',
+        controller: 'MainCtrl'
+      })
+      .when('/edisto', {
+        templateUrl: 'views/edisto.html',
+        controller: 'MainCtrl'
       })
       .otherwise({
         redirectTo: '/'
